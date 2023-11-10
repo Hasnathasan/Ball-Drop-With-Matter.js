@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    box-sizing: border-box;
+    
+}
+.logo-div{
+    width: 30%;
+    background-color: rgb(0, 174, 255);
+    padding: 10px;
+    text-align: center;
+    float: left;
+}
+.logo{
+    width: 80px;
+    float: left;
+    margin: 0px 25px;
+    transform: rotate(360deg);
+    animation: logo linear 0.1s  forwards infinite;
+}
+@keyframes logo{
+    0%{
+        transform: rotate(0deg); 
+    }
+    
+    100%{
+        transform: rotate(360deg); 
+    }
+}
+.logo-div h2{
+    font-family: 'Lobster', cursive;
+    float: left;
+    margin-top: 25px;
+}
+
+.menu-sec{
+    width:70%;
+    float: left;
+    background-color: rgb(0, 174, 255);;
+    height: 100px;
+    box-sizing: border-box;
+    
+    
+}
+.menu-container{
+    display: inline;
+    position: relative;
+    
+}
+.menu-container:hover .menu-content{
+    visibility: visible;width: 400px;
+}
+
+.menu-content{
+    position:absolute;
+    top: 42px;
+    right: 0px;
+    z-index: 1;
+    background-color: #00a1ff;
+    margin: 0px;
+    margin: 0 auto;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: visibility 4s !important;
+}
+.menu-content ul{
+    display: flex;
+    flex-direction: column !important;
+    margin: 0px !important;
+    
+    
+}
+.menu-content ul li{
+    float: left;
+    margin-left: -39px;
+    width: 90px;
+    text-align: center;
+    
+}
+.menu-sec ul li{
+    list-style: none;
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    font-size: 25px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.2s;
+    
+}
+.menu-sec ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.menu-sec ul li:hover{
+    background-color: aliceblue;
+}
+.menu-sec ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 30px;
+    
+}
+.clear-div{
+    clear: both;
+}
+
+
+
+
+
+
+/* Body css start */
+.img{
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+        
+    z-index:0;
+}
+.img img{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    
+}
+.body-sec{
+    position: absolute;
+    height: 448px;
+    top: 175px;
+}
+.header-container{
+    width: 60%;
+    float: left;
+    
+}
+.header-container h2{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.h2-container{
+    margin-top: 45px;
+    margin-left: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+}
+.side-bar{
+    width: 40%;
+    float: left;
+    text-align: center;   
+    margin-top: 30px;
+}
+.login-box{
+    width: 60%;
+    margin-left: 90px;
+    border: 2px solid #a9a4a473;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+.b-p-card{
+    margin-top: 30px;
+}
+.b-p-card h2,p{
+    font-family: 'Lobster', cursive;
+}
+.input-boxes{
+    margin-top: 20px;
+}
+.input-boxes input{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: none;
+}
+.input-boxes button{
+    width: 80%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background-color: #3394d9f7;
+    cursor: pointer;
+    animation: button 5s infinite forwards;
+}
+
+.input-boxes button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size:20px;
+    letter-spacing: 5px;
+}
+@keyframes button{
+    0%{
+        background-color: #ff0000f7;  
+    }
+    25%{
+        background-color: #00f7fff7;  
+    }
+    50%{
+        background-color: #00ff62f7;  
+    }
+    75%{
+        background-color: #6200fff7;  
+        
+    }
+    100%{
+        background-color: #ff0000f7;  
+    }
+}
+.sign-up{
+    font-family: 'Lobster', cursive;
+    color: aliceblue;
+}
+.sign-up a{
+    text-decoration: none;
+    color: #00a1ff;
+}
+
+
+
+.pic{
+    background-color: #00a1ff;
+}
